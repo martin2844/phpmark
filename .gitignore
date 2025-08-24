@@ -1,0 +1,28 @@
+# Dependencies
+/vendor/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+/logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+/data/docker/
+
+# Temporary files
+/tmp/
+*.tmp

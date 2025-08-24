@@ -1,0 +1,9 @@
+services:
+  phpmark:
+    build: .
+    ports:
+      - "3000:8080"
+    restart: unless-stopped
+    container_name: phpmark-site
+    environment:
+      - PHP_ENV=production

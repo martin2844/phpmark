@@ -1,0 +1,24 @@
+services:
+  phpmark-dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:8080"
+    volumes:
+      # Mount source code for live editing
+      - .:/var/www:delegated
+      # Mount configs separately to prevent overwrites
+      - ./docker/nginx.dev.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/php-fpm.dev.conf:/usr/local/etc/php-fpm.d/www.conf:ro
+      # Keep these as named volumes for performance
+      - nginx_cache:/tmp/nginx
+      - nginx_logs:/var/log/nginx
+    container_name: phpmark-site-dev
+    environment:
+      - PHP_ENV=development
+    restart: unless-stopped
+
+volumes:
+  nginx_cache:
+  nginx_logs:

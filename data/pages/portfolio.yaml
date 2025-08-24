@@ -1,0 +1,16 @@
+projects:
+  - name: "PHPMark Framework"
+    description: "A minimal server-side rendered blog framework built with PHP, Markdown, and YAML. Features hot reload, Docker support, and VS Code dark theme."
+    technologies: [PHP, nginx, Docker, Markdown, YAML]
+    githubLink: "https://github.com/yourusername/phpmark"
+    websiteLink: "https://phpmark.dev"
+  
+  - name: "Example Blog"
+    description: "A demonstration blog showcasing PHPMark Framework capabilities. Includes sample posts, notes, and portfolio showcase."
+    technologies: [PHPMark, Docker, nginx]
+    websiteLink: "https://example-blog.com"
+  
+  - name: "Custom Web App"
+    description: "A sample web application demonstrating full-stack development skills with modern technologies and best practices."
+    technologies: [PHP, JavaScript, Docker, MySQL]
+    githubLink: "https://github.com/yourusername/webapp"
