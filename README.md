@@ -1,3 +1,4 @@
+![phpmark](./phpmark.jpg)
 # PHPMark Framework
 
 A **minimal, server-side rendered blog framework** built with PHP, Markdown, and YAML. Zero JavaScript required, lightning fast, and developer-friendly.
