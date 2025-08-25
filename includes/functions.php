@@ -269,6 +269,16 @@ function getStats() {
 function parseArrayField($field) {
     if (empty($field)) return [];
     
+    // If it's already an array, return it
+    if (is_array($field)) {
+        return $field;
+    }
+    
+    // Ensure we have a string
+    if (!is_string($field)) {
+        return [];
+    }
+    
     // Handle JSON-style arrays: ["item1", "item2"]
     if (strpos($field, '[') !== false) {
         $cleaned = trim($field, '[]');

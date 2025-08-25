@@ -9,7 +9,7 @@ if (!$about) {
 } else {
     ob_start();
     ?>
-    <div class="card">
+    <div class="card about-content">
         <h2 style="color: <?= COLOR_PRIMARY ?>; margin-bottom: 20px;"><?= $about['frontmatter']['name'] ?? 'About' ?></h2>
         
         <?php if (!empty($about['frontmatter']['title'])): ?>
